@@ -1,0 +1,52 @@
+jwt => npm i jsonwebtoken
+
+            
+
+
+
+            user registration
+            user login
+            jwt token token
+            protectd Route
+            Logout
+
+
+
+how jwt works=>
+ 1. user login=>
+ 2. server verifies user => if credentials are valid the backeend genrates a jwt token using a secret key and send back to client
+ 3. token look likes =>
+             
+             werwt98634587623344hghgdwfhweriherw.iuuhqweiru876232.iigweir87
+             this token has 3 parts=>
+             1. header => type+algorithm(e.g sha256)
+             3. payload => data =(username, email, passsword)
+             3 signature => make a more secure(using secret key)
+4 client stores that token
+        the client stores the token in browser-> localstorage
+
+5. client send token with request=>
+    when calling a protected route, the frontend sends the jwt in the authorization header
+
+6. backend verify that token
+
+
+
+
+
+
+cors => 
+cross-origin resource sharing
+
+a web browser blocks request if your frontend(react) and backend are on different ports.
+front end  => 5173, 5172, 5171
+backend  => 3000 
+
+web browser block the request
+
+
+how to avoid cors=>
+1. backend side -> 
+
+
+
