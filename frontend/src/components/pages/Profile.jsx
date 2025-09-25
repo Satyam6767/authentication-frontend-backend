@@ -8,7 +8,7 @@ const Profile = () => {
 
   useEffect(()=>{
       const token = localStorage.getItem('token')
-      axios.get("http://localhost:3000/api/auth/profile",{
+      axios.get("https://authentication-frontend-backend.onrender.com/api/auth/profile",{
         headers: {
           Authorization: `Bearer ${token}`
         }

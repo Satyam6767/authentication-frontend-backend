@@ -11,7 +11,8 @@ const navigate = useNavigate();
         e.preventDefault();
         try{
 
-            const res = await axios.post('http://localhost:3000/api/auth/login', data)
+            // const res = await axios.post('http://localhost:3000/api/auth/login', data)
+            const res = await axios.post('https://authentication-frontend-backend.onrender.com/api/auth/login', data)
             localStorage.setItem('token', res.data.token)
             alert("login successful")
             navigate('/profile')

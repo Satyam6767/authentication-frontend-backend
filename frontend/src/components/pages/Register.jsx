@@ -15,7 +15,7 @@ const [user, setuser] = useState({name:"", number:"", email:"", password:""})
         e.preventDefault();
         try{
 
-            const res = await axios.post('http://localhost:3000/api/auth/register', user)
+            const res = await axios.post('https://authentication-frontend-backend.onrender.com/api/auth/register', user)
             toast.success(res.data.message, {
                 position:"top-right"
             })

@@ -50,3 +50,14 @@ how to avoid cors=>
 
 
 
+
+
+
+
+live on git
+1. git init=>this strts git in your folder, so you can track changes in your files.
+2. git add .=> this tells giut to keep track of all files in your folder, . means all files
+3. git commit -m"initial-commit"
+4. git remote add origin <repository link>
+5. git branch -M main => this renames the main branch of your project to main
+6. git push -u origin main
